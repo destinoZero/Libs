@@ -4,12 +4,11 @@
 function sumArrayNumElements(arr) {
   var result = 0,
       arrLen = arr.length,
-      elem, el;
+      elem;
 
   arr.forEach(function(elem) {
     if(typeof elem !== 'number') {
-      el = elem;
-      console.log('"' + (typeof el) + '"' + ' is not a number.');
+      console.log('"' + (typeof elem) + '"' + ' is not a number.');
     }
     else {
       result += elem;
